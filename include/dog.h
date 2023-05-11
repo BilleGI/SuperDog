@@ -10,7 +10,7 @@ class Dog
     std::vector<Talent*> talents;
 public:
     Dog(std::string& name);
-//    ~Dog();
+    ~Dog();
     void showTalent() const;
     std::string getNameDog();
     int getAge();

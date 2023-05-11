@@ -85,13 +85,13 @@ Dog::Dog(std::string& name)
     }while((numTalent != -1 || talents.empty()) && (talents.size() < 3));
 }
 
-//Dog::~Dog()
-//{
-//    for(int i = 0; i < talents.size(); ++i)
-//    {
-//        delete talents[i];
-//    }
-//}
+Dog::~Dog()
+{
+    for(int i = 0; talents[i] == nullptr; ++i)
+    {
+        delete talents[i];
+    }
+}
 
 void Dog::showTalent()const
 {
